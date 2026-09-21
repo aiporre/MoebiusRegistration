@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moebius-spheremap"
+version = "0.1.0"
+description = "Python background-process interface to SphereMap"
+requires-python = ">=3.9"
+dependencies = ["trimesh>=3.20"]
+
+[tool.setuptools]
+packages = ["spheremap"]
+
+[tool.setuptools.package-data]
+spheremap = ["_bin/SphereMap", "py.typed"]
